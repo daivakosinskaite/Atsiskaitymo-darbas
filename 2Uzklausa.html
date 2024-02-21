@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/1008571027565072494/1206600004211441756/okaiva_create_logo_for_travel_agency._in_logo_-_computer_and_wo_4e4ef9d2-f018-4a43-9287-69432e6aee89.png?ex=65dc98d2&is=65ca23d2&hm=fdb82fa9d04699585dbb4aeb0a5af9b8bfca9aaed5cc83b36eeec1a8ae51d4ea&"
+         width="150" , height="150" <br> 
+        <h1>Kelionių agentūra "Programerio kelionės"</h1>
+            <button onclick="http://127.0.0.1:5501/3Login.html"> Login </button>
+    </header>
+     <main>
+
+        <nav>
+            <li><a href="#kelioniupasiulymai">Kelionių pasiūlymai</a></li>
+            <li><a href="#patarimaikeliaujantiems">Patarimai keliaujantiems</a></li>
+            <li><a href="#auto">Autonuomos pasiūlymai</a></li>
+            <li><a href="#zurnalas">Kelionių žurnalas</a></li>
+        </nav>
+     
+     <section>
+        <h3>Uzklausos forma</h3>
+        <form action="/action_page.php">
+            <label for="vardas">Vardas:</label>
+            <input type="text" id="vardas" name="vardas"
+            pattern="[A-Za-z]{3}" title="ivesti teisinga pasto adresa"><br>
+           </form>
+           <br>
+           <form action="/action_page.php">
+            <label for="email">Elektroninis pastas:</label>
+           <input type="text" id="email" name="email"
+            pattern="[A-Za-z]{3}" title="email"><br>
+            <br>
+            <label for="phone">Jusu tel. nr.</label>
+            <input type="tel." id="phone" name="phone">
+            <br>
+            <br>
+            <form>
+                <label for="country-select">Pasirinkite dominanti kelioniu tipa:</label>
+            
+                <select name="salys" id="pasirinkite sali">
+                    <option value="">--Pasirinkite--" </option>
+                    <option value="tolimos">Tolimos keliones </option>
+                    <option value="ekstremalios">Ekstremalios keliones </option>
+                    <option value="gurmaniskos">Gurmaniskos keliones </option>
+                    <option value="lietuva">Keliones po Lietuva </option>
+
+                </select>
+            </form>
+            <br>
+            <form>
+                <label for="country-select">Pasirinkite priimtina keliones biudzeta:</label>
+            
+                <select name="salys" id="pasirinkite sali">
+                    <option value="">--Pasirinkite--" </option>
+                    <option value="tolimos">Iki 500 &euro </option>
+                    <option value="ekstremalios">500-1000 &euro </option>
+                    <option value="gurmaniskos">1000-3000 &euro </option>
+                    <option value="lietuva">Nuo 3000 &euro </option>
+
+                </select>
+            </form>
+            <br>
+            <label for="data">Gimimo data:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <br>
+            <form>
+                <legend> Kaip su jumis susisiekti</legend>
+                    <div>
+                        <input type="checkbox" id="scales" name="scales"  />
+                        <label for="scales"> Telefonu</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="scales" name="scales"  />
+                        <label for="scales"> El. pastu</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="scales" name="scales"  />
+                        <label for="scales"> Pastu</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="scales" name="scales"  />
+                        <label for="scales"> SMS zinute</label>
+                    </div>
+            </form> 
+            <br>   
+            <form>
+            <label for="gender">Kokios trukmes kelione Jus domina?</label>
+                <input type="radio" id="duration" name="duration" value="K" />
+                <label for="duration"> Iki 4 dienu</label>
+            
+                <input type="radio" id="duration" name="duration" value="K" />
+                <label for="duration"> 5-7 dienos</label><br />
+
+                <input type="radio" id="duration" name="duration" value="K" />
+                <label for="duration"> 8-12 dienu</label>
+
+                <input type="radio" id="duration" name="duration" value="K" />
+                <label for="duration"> 13 ir daugiau dienu</label><br />
+            </form>
+            <br>
+            <textarea id="freeform" name="freeform" rows="4" cols="50">
+                Jusu klausimai
+            </textarea>
+            
+     </section>
+
+    </main>
+</body>
+</html>
